@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Photo highlights / UI design patterns</title>
+    <link rel="stylesheet" href="../css/reset.css" media="screen">
+    <link rel="stylesheet" href="../css/screen.css" media="screen">
+    <style>
+      body {
+        margin: 20px;
+      }
+
+      #bubble {
+        background: url(photo.JPG);
+        border-radius: 20px;
+        height: 640px;
+        float: left;
+        margin: 0 30px 0 0;
+        padding: 0;
+        position: relative;
+        width: 478px;
+      }
+
+      #bubble:after {
+        background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.2)));
+        border-radius: 15px 15px 10px 10px;
+        content: '';
+        height: 19px;
+        position: absolute;
+        right: 10px;
+        top: 4px;
+        width: 458px;
+        z-index: 1;
+      }
+
+      #slant {
+        background: url(photo.JPG);
+        border-radius: 20px;
+        height: 640px;
+        float: left;
+        margin: 0 30px 30px 0;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        width: 478px;
+      }
+
+      #slant:after {
+        background: -webkit-gradient(linear, 0% 0%, 0% 70%, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.0)));
+        border-radius: 15px 15px 10px 10px;
+        content: '';
+        height: 100%;
+        left: 275px;
+        position: absolute;
+        top: -200px;
+        width: 100%;
+        z-index: 1;
+        -webkit-transform: rotate(-30deg);
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div id="bubble"></div>
+    <div id="slant"></div>
+
+  </body>
+</html>
