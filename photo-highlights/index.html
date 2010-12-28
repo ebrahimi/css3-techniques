@@ -55,17 +55,18 @@
 
       #slant:after {
         background: -moz-linear-gradient(100% 70% 90deg, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.7));
-        background: -webkit-gradient(linear, 0% 0%, 0% 70%, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.0)));
+        background: -webkit-gradient(linear, right top, left bottom,
+                    from(rgba(255, 255, 255, 0.6)),
+                    to(rgba(255, 255, 255, 0.0)),
+                    color-stop(0.25, rgba(255, 255, 255, 0.2)),
+                    color-stop(0.25, rgba(255, 255, 255, 0.0))
+        );
         border-radius: 15px 15px 10px 10px;
         content: '';
         height: 100%;
-        left: 275px;
         position: absolute;
-        top: -200px;
         width: 100%;
         z-index: 1;
-        -moz-transform: rotate(-30deg);
-        -webkit-transform: rotate(-30deg);
       }
     </style>
   </head>
